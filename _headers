@@ -1,0 +1,6 @@
+/.well-known/openpgpkey/hu/*
+	Content-Type: application/octet-stream
+	Access-Control-Allow-Origin: *
+/.well-known/openpgpkey/chimbosonic.com/hu/*
+        Content-Type: application/octet-stream
+        Access-Control-Allow-Origin: *

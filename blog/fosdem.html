@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta name="description" content="Alexis Lowe's FOSDEM 2020 blogpost">
+  <title>FOSDEM 2020</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+<a href="/" id="dont-panic"><pre>                                
+                                  nnnmmm
+                   \||\       ;;;;%%%@@@@@@       \ //,
+                    V|/     %;;%%%%%@@@@@@@@@@  ===Y//
+                    68=== ;;;;%%%%%%@@@@@@@@@@@@    @Y
+                    ;Y   ;;%;%%%%%%@@@@@@@@@@@@@@    Y
+                    ;Y  ;;;+;%%%%%%@@@@@@@@@@@@@@@    Y
+                    ;Y__;;;+;%%%%%%@@@@@@@@@@@@@@i;;__Y
+                    iiY"";;   "uu%@@@@@@@@@@uu"   @"";;;>
+                          Y     "UUUUUUUUU"     @@
+                          `;       ___ _       @
+                            `;.  ,====\\=.  .;'
+                              ``""""`==\\=='
+                                      `;=====
+                                        ===
+
+88888b   d888b  888b  88 8P 888888    88888b    888     888b  88 88  d888b 88
+88   88 88   88 88`8b 88      88      88   88  88 88    88`8b 88 88 88   ` 88
+88   88 88   88 88 88 88      88      88888P  88   88   88 88 88 88 88     88
+88   88 88   88 88 `8b88      88      88     d8888888b  88 `8b88 88 88   , ""
+88888P   `888P  88  `888      88      88     88     `8b 88  `888 88  `888P 88
+</pre>
+</a>
+  <h2><a href="https://fosdem.org/2020/">FOSDEM</a> 2020</h2>
+  <p class=p-blog>
+    <a href="https://fosdem.org/2020/">FOSDEM</a> is a Free and Open Source Software (FOSS) conference in Brussels. It
+    is one of the biggest of its kind in Europe, with thousands of developers from all over the world gathering at the
+    event. If you are into FOSS or you contribute to open source projects then this is the place to be. This year was an
+    important year for <a href="https://fosdem.org/2020/">FOSDEM</a> as it was celebrating its 20th anniversary. To
+    commemorate the occasion, a number of the talks were focused on the history and evolution of FOSS.
+  </p>
+  <p class=p-blog>
+    In this blog post I will walk you through the different talks I attended. Most of them were recorded and you can
+    find them <a href="https://fosdem.org/2020/schedule/">the full list of talks here</a>.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/linux_kernel/">The Linux Kernel: We have to finish this thing one
+      day ;) solving big problems in small steps for more than two decades</a>
+    by <a href="https://fosdem.org/2020/schedule/speaker/thorsten_leemhuis/">Thorsten Leemhuis</a></h3>
+  <p class=p-blog>
+    This talk was a great overview of where the Linux kernel started and how far it has come, all the while taking small
+    steps to solve the big problems. Thorsten also covers some of the changes that have impacted the kernel such as the
+    creation of eBPF, which is allowing container technology to be more efficient and secure. The talk also briefly
+    covers the state of filesystems in the kernel.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/containers_kata/">Kata containers on openSUSE</a>
+    by <a href="https://fosdem.org/2020/schedule/speaker/ralf_haferkamp/">Ralf Haferkamp</a></h3>
+  <p class=p-blog>
+    <a href="https://katacontainers.io/">Kata</a> is an interesting take on containers. It allows you to swap the <a
+      href="https://github.com/opencontainers/runc">runc</a> runtime with <a href="https://katacontainers.io/">Kata</a>.
+    You can leverage small virtual machines for each of the containers you are deploying, giving even more isolation
+    between them but still allowing you to take advantage of all the tools that are created for containers such as BPF,
+    <a href="https://kubernetes.io/">Kubernetes</a>, <a href="https://podman.io/">podman</a> and the <a
+      href="https://github.com/opencontainers/image-spec">OCI image format</a>. It’s also available rootless.
+  </p>
+  <p class=p-blog>
+    Just before this talk I got to chat to Richard Brown, <a href="https://www.opensuse.org/">OpenSuse</a> ex-Board
+    Chairman, about <a href="https://podman.io/">podman</a> and filesystems, all of this without realising who I was
+    talking to. This is one of the things I love about <a href="https://fosdem.org/2020/">FOSDEM</a> - you can just bump
+    into and casually talk to so many amazing devs.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/riek_kubernetes/">How containers and Kubernetes re-defined the
+      GNU/Linux operating system a greybeard’s worst nightmare</a>
+    by <a href="https://twitter.com/RiekDaniel">Daniel Riek</a></h3>
+  <p class=p-blog>
+    This was an interesting talk about the evolution of the computing stack covering the influence of the different
+    technologies over time. It looked at how technologies like VMs, containers, binary packages and more, have
+    drastically changed how we consume software and how we architect our solutions.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/tor/">State of the Onion the road to mainstream adoption and
+      improved censorship circumvention</a> by <a href="https://fosdem.org/2020/schedule/speaker/pili_guerra/">Pili
+      Guerra</a></h3>
+  <p class=p-blog>
+    This session was the annual report on the state of the <a href="https://www.torproject.org/">Tor Project</a>. For
+    those of you that don’t know what the <a href="https://www.torproject.org/">Tor Project</a> is, it’s a distributed
+    uncensored network which allows you to be anonymous while accessing the Internet.
+  </p>
+  <p class=p-blog>
+    This project is very important to me as I have seen its use to save lives and allow people to continue to fight
+    their corrupt or dictatorial governments in a country where they are censored. The <a
+      href="https://www.torproject.org/">Tor Project</a> organisation continues to improve the user experience of the
+    Tor Browser and they have built a very talented UX team who are utilising the latest in industry techniques. One of
+    these techniques being user <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a>.
+    User <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> are used to help drive
+    UX improvements across all the products the <a href="https://www.torproject.org/">Tor Project</a> distributes. They
+    made the <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> available freely,
+    which got me and a friend discussing how it would be awesome to have a large repository of open source <a
+      href="https://www.usability.gov/how-to-and-tools/methods/personas.html">personas</a> for all FOSS projects to take
+    advantage of. This would help improve the user experience of FOSS products, reaching more people out there and maybe
+    finally bringing the year of Linux on the desktop.
+  </p>
+  <p class=p-blog>
+    They also had some cool stats for people who like to dig into the numbers. For example, the current available
+    network bandwidth is around 300Gbps and only half of it is being used. This is thanks to the community of volunteers
+    that run well over 6000 relays. </p>
+
+  <p class=p-blog>
+    Sadly, the report also showed a drop in the number of bridges. Bridges are relays that are not publicly published
+    that allow people to access the network even when it is blocked or censored in their environment. </p>
+
+  <p class=p-blog>
+    Lastly, they covered the release of the Tor Browser on Android. Previously, accessing the Tor network on mobile
+    required 2 applications - Orbot and Orfox and the new release removes the complexity of having 2 applications to
+    access Tor.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/hfaf/">Homebrew: features and funding</a>
+    by <a href="https://mikemcquaid.com/about/">Mike McQuaid</a></h3>
+  <p class=p-blog>
+    This was an interesting session on how <a href="https://brew.sh">Homebrew</a> manages beta access by putting users
+    who have ran the dev tools onto the beta channel. The talk covered how <a href="https://brew.sh">Homebrew</a> uses
+    feature flags to allow testing of broken/not yet ready features. Mike shared how <a
+      href="https://brew.sh">Homebrew</a> achieved better reach for funding by asking for it in a polite and
+    non-intrusive way within the tool itself, where users would actually see it.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/rhdlp/">Reinventing home directories let’s bring the UNIX concept
+      of home directories into the 21st century</a> by <a href="http://0pointer.de/lennart/">Lennart Poettering</a></h3>
+  <p class=p-blog>
+    This is one of the talks that I missed out on but I will be waiting impatiently for the release of the recording. <a
+      href="https://github.com/poettering/systemd/tree/homed">Systemd-homed</a> will be a space to keep an eye on as it
+    will fundamentally change how home directories are managed and setup on <a
+      href="https://github.com/poettering/systemd">systemd</a> Linux distributions.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/dip_tor_dev_intro/">An introduction to the Tor ecosystem for
+      developers</a> by <a href="https://ahf.me/">Alexander Færøy</a></h3>
+  <p class=p-blog>
+    Another talk on the <a href="https://www.torproject.org/">Tor Project</a>, this time about how it is maintained and
+    developed. It was a great introduction on where to start if you are interested in contributing to the project.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/dip_p2p_matrix/">The path to Peer-to-Peer Matrix in which we throw
+      away DNS and run Matrix clientside over libp2p and friends</a> by <a
+      href="https://fosdem.org/2020/schedule/speaker/matthew_hodgson/">Matthew Hodgson</a></h3>
+  <p class=p-blog>
+    As a die-hard fan of <a href="https://matrix.org/">Matrix</a> I was a bit sad to have to miss this talk but the
+    <a href="https://ftp.belnet.be/mirror/FOSDEM/2020/UA2.220/dip_p2p_matrix.mp4">recording is available here</a>. For
+    those of you who haven’t heard of <a href="https://matrix.org/">Matrix</a>, it is an open standard for secure,
+    decentralised, real-time communication. The easiest way to use it is via an app called <a
+      href="https://riot.im/">Riot</a> which I really like. This talk specifically detailed the instructions on how to
+    make <a href="https://matrix.org/">Matrix</a> peer to peer, removing the need for servers and DNS.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/privacy_by_design/">Privacy by design</a>
+    by <a href="https://fosdem.org/2020/schedule/speaker/trishul_goel/">Trishul Goel</a></h3>
+  <p class=p-blog>
+    I would recommend this session to all web devs out there - it covered how to build a website that protects user's
+    data by design, utilising available HTTP headers such as <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy</a> and the new <a
+      href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy">Feature Policy</a>. All of this while
+    creating a more performant website.
+  </p>
+  <hr />
+  <h3><a href="https://fosdem.org/2020/schedule/event/fossh/">FOSSH - 2000 to 2020 and beyond! maddog continues to
+      pontificate</a>
+    by <a href="https://twitter.com/maddoghall">Jon ‘疯狗’ Hall</a></h3>
+  <p class=p-blog>
+    This was the highlight of the conference for me. Delivered by Jon “Maddog” Hall, it was a great historical overview
+    of the evolution of Freedom and Open Source Software, full of comedy and even got a bit emotional. I cannot
+    recommend it enough especially if you love FOSS as much as I do.
+  </p>
+  <hr />
+  <h3></a>Conclusion</h3>
+  <p class=p-blog>
+    <a href="https://fosdem.org/2020/">FOSDEM</a> was an excellent event and I would recommend it highly to anyone who
+    is passionate about or would like to explore the world of FOSS. For me, it was also a great excuse to spend some
+    time in Brussels - the city where I grew up.
+  </p>
+  <h3>A few pictures from the conferece:</h3>
+  <div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_vim_timetable.jpeg">
+        <img src="img/fosdem_vim_timetable.jpeg" alt="Using vim to keep track of the busy timetable of the event."
+          width="600" height="400">
+      </a>
+      <div class="desc">Using vim to keep track of the busy timetable of the event.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_hackers_drink.jpeg">
+        <img src="img/fosdem_hackers_drink.jpeg"
+          alt="The hackers drink of choice and the most efficient form of caffeine." width="600" height="400">
+      </a>
+      <div class="desc">The hackers drink of choice and so full of caffeine.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_opensuse_beer.jpeg">
+        <img src="img/fosdem_opensuse_beer.jpeg" alt="OpenSuse brought german beer to Belgium." width="600"
+          height="400">
+      </a>
+      <div class="desc">OpenSuse brought German beer to Belgium.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_stickers.jpeg">
+        <img src="img/fosdem_stickers.jpeg" alt="Some of my new favourite stickers in there." width="600" height="400">
+      </a>
+      <div class="desc">Some of my new favourite stickers in there.</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img/fosdem_swag.jpeg">
+        <img src="img/fosdem_swag.jpeg" alt="Some of my new favourite stickers in there." width="600" height="400">
+      </a>
+      <div class="desc">So much great swag, my favourite being the <a href="https://www.torproject.org/">Tor Project</a>
+        t-shirt.</div>
+    </div>
+  </div>
+  <img src="https://chimbosonic.goatcounter.com/count?p=/test-img" width="0" height="0" alt="tracker image">
+</body>
+
+</html>

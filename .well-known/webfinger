@@ -1,0 +1,23 @@
+{
+    "subject": "acct:chimbosonic@fosstodon.org",
+    "aliases": [
+      "https://fosstodon.org/@chimbosonic",
+      "https://fosstodon.org/users/chimbosonic"
+    ],
+    "links": [
+       {
+        "rel": "http://webfinger.net/rel/profile-page",
+        "type": "text/html",
+        "href": "https://fosstodon.org/@chimbosonic"
+      },
+      {
+        "rel": "self",
+        "type": "application/activity+json",
+        "href": "https://fosstodon.org/users/chimbosonic"
+      },
+      {
+        "rel": "http://ostatus.org/schema/1.0/subscribe",
+        "template": "https://fosstodon.org/authorize_interaction?uri={uri}"
+      }
+    ]
+}

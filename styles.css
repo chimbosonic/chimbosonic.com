@@ -1,0 +1,130 @@
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #9094d9;
+    --blue: #21a3ff;
+    --cyan: #2aa198;
+    --green: #859900;
+    --white: #FFFFFF;
+}
+body {
+    background-color: var(--base03);
+    color: var(--base0);
+}
+
+.dont-panic {
+    color: var(--yellow);
+
+}
+
+hr {
+    border: 2px dashed var(--base0);
+}
+
+h2,
+h3 {
+    color: var(--yellow);
+}
+
+#dont-panic {
+    color: var(--yellow);
+    white-space: pre-wrap;
+    text-decoration: none !important; 
+}
+
+.panic {
+    color: var(--yellow);
+}
+
+.user {
+    color: var(--green);
+}
+
+.host {
+    color: var(--blue);
+}
+
+.dir {
+    color: var(--blue);
+}
+
+.p {
+    color: var(--orange);
+}
+
+.out {
+    color: var(--white);
+}
+
+a:link {
+    color: var(--violet);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+a:focus {
+    color: var(--blue);
+}
+
+a:active {
+    color: var(--red);
+}
+
+a:visited {
+    color: var(--magenta);
+}
+
+.p-blog {
+    color: var(--white);
+    width: 750px;
+}
+
+textarea {
+    width: 40em;
+    height: 20em;
+    color: var(--base3);
+    background-color: var(--base01);
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    background-color: var(--base03);
+    color: var(--base0);
+    font-size: 100%;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 125px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: var(--white);
+}

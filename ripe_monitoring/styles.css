@@ -1,0 +1,31 @@
+:root {
+    --base03: #002b36;
+    --yellow: #b58900;
+    --white: #FFFFFF;
+}
+body {
+    background-color: var(--base03);
+}
+
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 25vh;
+    padding: 1%;
+}
+
+h2,
+h3 {
+    color: var(--yellow);
+}
+
+#dont-panic {
+    color: var(--yellow);
+    text-decoration: none !important; 
+}
+
+.panic {
+    color: var(--yellow);
+}

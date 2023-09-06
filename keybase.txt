@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/chimbosonic
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.chimbosonic.com
+  * I am chimbosonic (https://keybase.io/chimbosonic) on keybase.
+  * I have a public key ASB5Lahg3ImkjUYX4n2NEOpQRuiemrQcovno6OUgd_vnrwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120792da860dc89a48d4617e27d8d10ea5046e89e9ab41ca2f9e8e8e52077fbe7af0a",
+            "host": "keybase.io",
+            "kid": "0120792da860dc89a48d4617e27d8d10ea5046e89e9ab41ca2f9e8e8e52077fbe7af0a",
+            "uid": "6775a377b4af10404496fa94484d9b19",
+            "username": "chimbosonic"
+        },
+        "merkle_root": {
+            "ctime": 1497353157,
+            "hash": "0c0030a1b4653e224945ae97ccc58b9f51b14e18b35d723d75d8966cdecd0adda39ee9cf69247d8a5ac29fdd8766ddc42591cfde4416b60e73c0cd1764909f63",
+            "hash_meta": "95950e47f793e71666bcf24d7e14ab67893e5fce11d1068f6818bbbdcb72a382",
+            "seqno": 1166202
+        },
+        "service": {
+            "hostname": "www.chimbosonic.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1497353171,
+    "expire_in": 504576000,
+    "prev": "0b7bb0bfa781ccb7129ae05e71042127096a65653a4ca97474f7aa52c622ff81",
+    "seqno": 30,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgeS2oYNyJpI1GF+J9jRDqUEbonpq0HKL56OjlIHf7568Kp3BheWxvYWTFA057ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNzkyZGE4NjBkYzg5YTQ4ZDQ2MTdlMjdkOGQxMGVhNTA0NmU4OWU5YWI0MWNhMmY5ZThlOGU1MjA3N2ZiZTdhZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzkyZGE4NjBkYzg5YTQ4ZDQ2MTdlMjdkOGQxMGVhNTA0NmU4OWU5YWI0MWNhMmY5ZThlOGU1MjA3N2ZiZTdhZjBhIiwidWlkIjoiNjc3NWEzNzdiNGFmMTA0MDQ0OTZmYTk0NDg0ZDliMTkiLCJ1c2VybmFtZSI6ImNoaW1ib3NvbmljIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk3MzUzMTU3LCJoYXNoIjoiMGMwMDMwYTFiNDY1M2UyMjQ5NDVhZTk3Y2NjNThiOWY1MWIxNGUxOGIzNWQ3MjNkNzVkODk2NmNkZWNkMGFkZGEzOWVlOWNmNjkyNDdkOGE1YWMyOWZkZDg3NjZkZGM0MjU5MWNmZGU0NDE2YjYwZTczYzBjZDE3NjQ5MDlmNjMiLCJoYXNoX21ldGEiOiI5NTk1MGU0N2Y3OTNlNzE2NjZiY2YyNGQ3ZTE0YWI2Nzg5M2U1ZmNlMTFkMTA2OGY2ODE4YmJiZGNiNzJhMzgyIiwic2Vxbm8iOjExNjYyMDJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3LmNoaW1ib3NvbmljLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjQifSwiY3RpbWUiOjE0OTczNTMxNzEsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiMGI3YmIwYmZhNzgxY2NiNzEyOWFlMDVlNzEwNDIxMjcwOTZhNjU2NTNhNGNhOTc0NzRmN2FhNTJjNjIyZmY4MSIsInNlcW5vIjozMCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAvuGbupMf7g1ANHGTMg/BlP2jfgk5Xt1p3NI/eQ/R0e32XumyemfG1ZPG8hF0Ve9ZFALZaLOglVGpFRAle57MPqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgDnItNXVAeXQiFNRQIQzD501Iw4qxxtG4ef6hGmldrFKjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chimbosonic
+
+==================================================================
