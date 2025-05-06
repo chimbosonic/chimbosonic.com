@@ -4,3 +4,6 @@
 /.well-known/openpgpkey/chimbosonic.com/hu/*
         Content-Type: application/octet-stream
         Access-Control-Allow-Origin: *
+/*
+  cache-control: max-age=604800
+  cache-control: public
