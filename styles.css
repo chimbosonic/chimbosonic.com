@@ -17,14 +17,25 @@
     --green: #859900;
     --white: #FFFFFF;
 }
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
 body {
+    margin: 0;
     background-color: var(--base03);
     color: var(--base0);
 }
 
+pre {
+    overflow-x: auto;
+}
+
 .dont-panic {
     color: var(--yellow);
-
+    text-decoration: none !important;
+    white-space: pre-wrap;
 }
 
 hr {
@@ -88,7 +99,8 @@ a:visited {
 
 .p-blog {
     color: var(--white);
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
 }
 
 textarea {
