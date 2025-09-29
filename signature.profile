@@ -13,4 +13,5 @@ proof=https://lobste.rs/u/chimbosonic
 Domains:
 
 proof=dns:chimbosonic.com?type=TXT
+proof=dns:dp42.dev?type=TXT
 proof=dns:raphael.digital?type=TXT
