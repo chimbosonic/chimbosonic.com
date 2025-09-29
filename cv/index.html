@@ -46,6 +46,24 @@
             position: relative;
         }
 
+        summary {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
+
+
+        summary span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
+
         h3 {
             margin: 0 0 6px 0;
             position: relative;
@@ -227,14 +245,19 @@
             <dt>Podcasts and Talks</dt>
             <dd>
                 <h2>Podcasts</h2>
-                <h4>Big Ideas In App Architecture:</h4><p>Unwrapping Moonpig Architectural Insights into Personalization and
-                Scalability.</p>
-                <h4>AWS Developers Podcast:</h4><p>Scaling E-commerce with Serverless: The Moonpig Story.</p>
-                <h4>Moonpig Technology Podcast:</h4><p>Event Driven Architecture.</p>
+                <h4>Big Ideas In App Architecture:</h4>
+                <p>Unwrapping Moonpig Architectural Insights into Personalization and
+                    Scalability.</p>
+                <h4>AWS Developers Podcast:</h4>
+                <p>Scaling E-commerce with Serverless: The Moonpig Story.</p>
+                <h4>Moonpig Technology Podcast:</h4>
+                <p>Event Driven Architecture.</p>
 
                 <h2>Talks</h2>
-                <h4>London GraphQL Meetup:</h4><p>Moonpig’s GraphQL Journey Scaling with Serverless Federation.</p>
-                <h4>Serverless London Meetup:</h4><p>Scaling Moonpig's Serverless Backend: Event-Driven Federation at Scale.</p>
+                <h4>London GraphQL Meetup:</h4>
+                <p>Moonpig’s GraphQL Journey Scaling with Serverless Federation.</p>
+                <h4>Serverless London Meetup:</h4>
+                <p>Scaling Moonpig's Serverless Backend: Event-Driven Federation at Scale.</p>
             </dd>
 
             <dd class="clear"></dd>
@@ -271,78 +294,121 @@
                         professional growth and development in their respective fields.</li>
                 </ul>
 
-                <h2>Senior Engineer - Platform<span>Moonpig | Sep 2021 - May 2022</span></h2>
-                <ul>
-                    <li>Subject matter expert on Terraform and Terragrunt within the Tech department,
-                        offering guidance and expertise on these tools.</li>
-                    <li>Helped lead a significant migration project following the acquisition of Greetz, effectively
-                        resolving intricate challenges within a Multi-Tenancy/Multi-instance architecture. Moreover, I
-                        utilised my language skills to assist with translations and assisted the UK Tech teams in
-                        gaining a better understanding of the Dutch customer base.</li>
-                    <li>Established a standardised framework for deployments and repositories, specifically designed to
-                        assist with the migration project.</li>
-                </ul>
+                <details>
+                    <summary>Senior Engineer - Platform<span>Moonpig | Sep 2021 - May 2022</span></summary>
+                    <ul>
+                        <li>Subject matter expert on Terraform and Terragrunt within the Tech department,
+                            offering guidance and expertise on these tools.</li>
+                        <li>Helped lead a significant migration project following the acquisition of Greetz, effectively
+                            resolving intricate challenges within a Multi-Tenancy/Multi-instance architecture. Moreover,
+                            I
+                            utilised my language skills to assist with translations and assisted the UK Tech teams in
+                            gaining a better understanding of the Dutch customer base.</li>
+                        <li>Established a standardised framework for deployments and repositories, specifically designed
+                            to
+                            assist with the migration project.</li>
+                    </ul>
+                </details>
 
-                <h2>Senior Product Security Engineer<span>Moonpig | Jul 2020 - Sep 2021</span></h2>
-                <ul>
-                    <li>Developed and implemented the team's processes for vulnerability management.</li>
-                    <li>Implemented a secrets detection system within the pipeline and established a robust process for
-                        efficiently handling leaked secrets.</li>
-                    <li>Designed and implemented a logging and alerting mechanism for AWS GuardDuty by leveraging
-                        Slackbot.</li>
-                    <li>Established contact points and channels of communication between the Product Security team and
-                        the rest of the engineering department.</li>
-                    <li>Offered engineering support to the Security Operations team during the development of their SIEM
-                        (Security Information and Event Management) project.</li>
-                </ul>
+                <details>
+                    <summary>Senior Product Security Engineer<span>Moonpig | Jul 2020 - Sep 2021</span></summary>
+                    <ul>
+                        <li>Developed and implemented the team's processes for vulnerability management.</li>
+                        <li>Implemented a secrets detection system within the pipeline and established a robust process
+                            for
+                            efficiently handling leaked secrets.</li>
+                        <li>Designed and implemented a logging and alerting mechanism for AWS GuardDuty by leveraging
+                            Slackbot.</li>
+                        <li>Established contact points and channels of communication between the Product Security team
+                            and
+                            the rest of the engineering department.</li>
+                        <li>Offered engineering support to the Security Operations team during the development of their
+                            SIEM
+                            (Security Information and Event Management) project.</li>
+                    </ul>
+                </details>
 
-                <h2>Cyber DevOps Engineer<span>Capital One | Aug 2017 - Jul 2020</span></h2>
-                <ul>
-                    <li>Lead and subject matter expert on logging infrastructure projects providing reliable
-                        logging collection and analysis for diverse technologies.</li>
-                    <li>Provided thought leadership and tech knowledge on CI/CD pipeline improvement projects.</li>
-                    <li>Designed, built and maintained fully automated CI/CD pipelines using Jenkins for deployments to
-                        AWS serving both cloud and on-premise systems.</li>
-                    <li>Used modern DevOps tooling such as Ansible, Terraform and Troposphere to automate deployment and
-                        configuration of systems at scale with a focus on reproducibility and testability.</li>
-                    <li>Led the team to greater delivery velocity through process improvements leveraging standard
-                        engineering practices and automation using Git, Github and JIRA.</li>
-                    <li>Worked on automating a number of operation workflows using tools such as Python, Bash and Make.
-                    </li>
-                    <li>Developed dashboards and monitoring capability using Datadog to provide proactive detection of
-                        issues and visibility on service usage.</li>
-                    <li>Used performance testing and metrics to create and fine-tune scalable platforms and maximise
-                        cost savings.</li>
-                    <li>Developed guidelines, provided knowledge and took part in threat modelling sessions for
-                        hardening and secure usage of containers.</li>
-                    <li>Consulted and contributed to the design and architecture of security solutions. </li>
-                    <li>Capital One Cyber Security Meetup Organiser.</li>
-                </ul>
+                <details>
+                    <summary>Cyber DevOps Engineer<span>Capital One | Aug 2017 - Jul 2020</span></summary>
+                    <ul>
+                        <li>Lead and subject matter expert on logging infrastructure projects providing reliable
+                            logging collection and analysis for diverse technologies.</li>
+                        <li>Provided thought leadership and tech knowledge on CI/CD pipeline improvement projects.</li>
+                        <li>Designed, built and maintained fully automated CI/CD pipelines using Jenkins for deployments
+                            to
+                            AWS serving both cloud and on-premise systems.</li>
+                        <li>Used modern DevOps tooling such as Ansible, Terraform and Troposphere to automate deployment
+                            and
+                            configuration of systems at scale with a focus on reproducibility and testability.</li>
+                        <li>Led the team to greater delivery velocity through process improvements leveraging standard
+                            engineering practices and automation using Git, Github and JIRA.</li>
+                        <li>Worked on automating a number of operation workflows using tools such as Python, Bash and
+                            Make.
+                        </li>
+                        <li>Developed dashboards and monitoring capability using Datadog to provide proactive detection
+                            of
+                            issues and visibility on service usage.</li>
+                        <li>Used performance testing and metrics to create and fine-tune scalable platforms and maximise
+                            cost savings.</li>
+                        <li>Developed guidelines, provided knowledge and took part in threat modelling sessions for
+                            hardening and secure usage of containers.</li>
+                        <li>Consulted and contributed to the design and architecture of security solutions. </li>
+                        <li>Capital One Cyber Security Meetup Organiser.</li>
+                    </ul>
 
-                <h2>Application Security Engineer<span>Capital One | Jul 2018 – Apr 2019</span></h2>
-                <ul>
-                    <li>Performed API and Web application penetration tests including customer facing banking
-                        applications and PSD2 open banking API.</li>
-                    <li>Automated pentest report creation using Python, shared via Git and Jira.</li>
-                    <li>Wrote scripts for developers to retest vulnerabilities after applying their fixes.</li>
-                    <li>Guided developers in secure coding practices.</li>
-                </ul>
+                </details>
 
-                <h2>Cyber Defence Analyst<span>Computacenter | Sep 2015 - Sep 2016</span></h2>
-                <p>
-                    Within the framework of a year’s industrial placement from the University of Birmingham worked in
-                    the Group Information Assurance division of Computacenter. Worked on ISO27001 compliance, performed
-                    infrastructure pentesting, contributed to creation of security operations centre and contributed to
-                    the creation of vulnerability management process.
-                </p>
+                <details>
+                    <summary>Application Security Engineer<span>Capital One | Jul 2018 – Apr 2019</span></summary>
+                    <ul>
+                        <li>Performed API and Web application penetration tests including customer facing banking
+                            applications and PSD2 open banking API.</li>
+                        <li>Automated pentest report creation using Python, shared via Git and Jira.</li>
+                        <li>Wrote scripts for developers to retest vulnerabilities after applying their fixes.</li>
+                        <li>Guided developers in secure coding practices.</li>
+                    </ul>
 
-                <h2>Delivery and Stock Control<span>Computacenter Belgium | Jul-Aug 2012 and 2013</span></h2>
-                <p>
-                    Received a two-week training with the stock manager and then was entrusted with stock management
-                    responsibilities. Acquired time management and organisation skills during this period.
-                </p>
+                </details>
+
+
+                <details>
+                    <summary>Cyber Defence Analyst<span>Computacenter | Sep 2015 - Sep 2016</span></summary>
+                    <p>
+                        Within the framework of a year’s industrial placement from the University of Birmingham worked
+                        in
+                        the Group Information Assurance division of Computacenter. Worked on ISO27001 compliance,
+                        performed
+                        infrastructure pentesting, contributed to creation of security operations centre and contributed
+                        to
+                        the creation of vulnerability management process.
+                    </p>
+
+                </details>
+
+                <details>
+                    <summary>Delivery and Stock Control<span>Computacenter Belgium | Jul-Aug 2012 and 2013</span>
+                    </summary>
+                    <p>
+                        Received a two-week training with the stock manager and then was entrusted with stock management
+                        responsibilities. Acquired time management and organisation skills during this period.
+                    </p>
+
+                </details>
             </dd>
 
+            <dd class="clear"></dd>
+
+            <dt>Open-Source Contributions</dt>
+            <dd>
+                <h2><a href="https://wkd.dp42.dev" style="all: unset">wkd.dp42.dev</a><span>Maintainer & Host</span>
+                </h2>
+                <p>A web-based tool / frontend for testing and debugging the OpenPGP Web Key Directory (WKD) protocol.
+                </p>
+
+                <h2><a href="https://keyoxide.org" style="all: unset">Keyoxide</a><span>Maintainer & DevRel</span></h2>
+                <p>A decentralized, open-source tool for creating and verifying online identities (“personas”), allowing
+                    users to prove account ownership while preserving privacy.</p>
+            </dd>
             <dd class="clear"></dd>
 
             <dt>Education</dt>
@@ -352,34 +418,38 @@
                 <div id="edu">
                     <div>
                         <h3>Computer Science <span>First</span></h3>
-                        <ul>
-                            <li>Introduction to Cyber Security</li>
-                            <li>Networks and Network Security (C99, IPsec and iptables)</li>
-                            <li>Operating Systems (C99/ANSI, Linux Kernel)</li>
-                            <li>Software Programming (Java and PostgreSQL) </li>
-                            <li>Team Project (Made a Multiplayer Java Game) </li>
-                            <li>Information and the Web (XML, JavaScript and HTML) </li>
-                            <li>Computer Systems and Architecture (X86 & MIPS Assembly)</li>
-                            <li>Foundation of Computer Science (Ocaml)</li>
-                            <li>Professional Computing</li>
-                            <li>Language and Logic</li>
-                            <li>Software Engineering</li>
-                        </ul>
+                        <details>
+                            <ul>
+                                <li>Introduction to Cyber Security</li>
+                                <li>Networks and Network Security (C99, IPsec and iptables)</li>
+                                <li>Operating Systems (C99/ANSI, Linux Kernel)</li>
+                                <li>Software Programming (Java and PostgreSQL) </li>
+                                <li>Team Project (Made a Multiplayer Java Game) </li>
+                                <li>Information and the Web (XML, JavaScript and HTML) </li>
+                                <li>Computer Systems and Architecture (X86 & MIPS Assembly)</li>
+                                <li>Foundation of Computer Science (Ocaml)</li>
+                                <li>Professional Computing</li>
+                                <li>Language and Logic</li>
+                                <li>Software Engineering</li>
+                            </ul>
+                        </details>
                     </div>
                     <div>
                         <h3>Business Management <span>2.1</span></h3>
-                        <ul>
-                            <li>Strategic Management </li>
-                            <li>Global Marketing</li>
-                            <li>Introduction to Marketing</li>
-                            <li>Human Resource Management</li>
-                            <li>Financial Decision Making</li>
-                            <li>Supply Chain Management </li>
-                            <li>Financial Analysis</li>
-                            <li>International Economics</li>
-                            <li>Introduction to Economics</li>
-                            <li>Business Organisation and Management</li>
-                        </ul>
+                        <details>
+                            <ul>
+                                <li>Strategic Management </li>
+                                <li>Global Marketing</li>
+                                <li>Introduction to Marketing</li>
+                                <li>Human Resource Management</li>
+                                <li>Financial Decision Making</li>
+                                <li>Supply Chain Management </li>
+                                <li>Financial Analysis</li>
+                                <li>International Economics</li>
+                                <li>Introduction to Economics</li>
+                                <li>Business Organisation and Management</li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
                 <h2><span>2010 - 2013</span>Collège Dame De Marie, Belgium</h2>

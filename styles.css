@@ -43,14 +43,15 @@ hr {
 }
 
 h2,
-h3 {
+h3,
+summary {
     color: var(--yellow);
 }
 
 #dont-panic {
     color: var(--yellow);
     white-space: pre-wrap;
-    text-decoration: none !important; 
+    text-decoration: none !important;
 }
 
 .panic {
