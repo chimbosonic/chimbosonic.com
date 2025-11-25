@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chimbosonic.com/.well-known/sitemap.xml
