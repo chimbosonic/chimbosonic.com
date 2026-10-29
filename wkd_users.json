@@ -2,7 +2,7 @@
     "users": [
         {
             "id": "alexis.lowe@chimbosonic.com",
-            "key_fingerprints": ["AC48BC1F029B6188D97E2D807C855DB4466DF0C6"],
+            "key_fingerprints": ["AC48BC1F029B6188D97E2D807C855DB4466DF0C6","F1977D760CDFAF886CA1B9EAD13924C577A8B136"],
             "wkd_hash": "z9naq3iddua5t55b3hp1w3hwz8eyrc7n"
         }
     ]
