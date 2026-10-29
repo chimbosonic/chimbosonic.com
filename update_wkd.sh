@@ -1,18 +1,27 @@
 #!/bin/bash
+set -euo pipefail
+
 WKD_USER_FILE=./wkd_users.json
-
-WKD_USERS=$(cat ${WKD_USER_FILE} | jq -c '.users[]' )
 DOMAIN=chimbosonic.com
+DIRECT_DIR=".well-known/openpgpkey/hu"
+ADVANCED_DIR=".well-known/openpgpkey/${DOMAIN}/hu"
 
+mkdir -p "${DIRECT_DIR}" "${ADVANCED_DIR}"
 
-mkdir -p ".well-known/openpgpkey/hu/" ".well-known/openpgpkey/${DOMAIN}/hu/"
+jq -c '.users[]' "${WKD_USER_FILE}" | while read -r user; do
+    user_id=$(jq -r '.id' <<< "${user}")
+    wkd_hash=$(jq -r '.wkd_hash' <<< "${user}")
+    # Accept either key_fingerprints (array) or the old key_fingerprint (string)
+    fingerprints=$(jq -r '(.key_fingerprints // [.key_fingerprint])[]' <<< "${user}")
 
-for user in ${WKD_USERS}
-do
-    user_id=$(echo ${user} | jq -cr '.id')
-    user_wkd_hash=$(echo ${user} |  jq -cr '.wkd_hash')
-    user_key_fingerprint=$(echo ${user} |  jq -cr '.key_fingerprint')
+    for fpr in ${fingerprints}; do
+        if ! gpg --list-keys "${fpr}" > /dev/null 2>&1; then
+            echo "Key ${fpr} for ${user_id} not in keyring" >&2
+            exit 1
+        fi
+    done
 
-    gpg --no-armor --export ${user_key_fingerprint} > ".well-known/openpgpkey/hu/${user_wkd_hash}"
-    gpg --no-armor --export ${user_key_fingerprint} > ".well-known/openpgpkey/${DOMAIN}/hu/${user_wkd_hash}"
+    # Fingerprints contain no spaces, so word splitting here is intended
+    gpg --no-armor --export ${fingerprints} > "${DIRECT_DIR}/${wkd_hash}"
+    cp "${DIRECT_DIR}/${wkd_hash}" "${ADVANCED_DIR}/${wkd_hash}"
 done
