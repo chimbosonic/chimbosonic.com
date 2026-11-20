@@ -141,57 +141,40 @@ l<span class="panic">rwx</span><span class="panic">r</span>--<span class="panic"
 l<span class="panic">rwx</span><span class="panic">r</span>--<span class="panic">r</span>--     <span class="user">5.6K</span> <span class="panic">chimbosonic</span>   5 Feb 12:00 <a href="https://pocorgtfo.chimbosonic.com">pocorgtfo_mirror</a>
 </span>
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span></span></span> gpg --list-keys "Alexis Lowe"
-<span class="out">pub   ed25519 2020-08-26 [SC] [expired: 2021-08-26]
-  A03351F7677A6D0B94F224A636CB3789EAC25E50
-uid           [ expired] Alexis Lowe &lt;alexis.lowe@protonmail.com&gt;
-
-pub   rsa4096 2021-11-16 [SC] [expires: 2037-11-12]
+<span class="out">pub   rsa4096 2021-11-16 [SC] [revoked: 2026-10-29]
       AC48BC1F029B6188D97E2D807C855DB4466DF0C6
-uid           [ ultimate] Alexis Lowe &lt;alexis.lowe@chimbosonic.com&gt;
-uid           [ ultimate] Alexis Lowe &lt;alexis.lowe@dp42.dev&gt;
-sub   rsa4096 2021-11-16 [E] [expires: 2037-11-12]
+      reason for revocation: Key is superseded
+         revocation comment: Updating to Post Quantum Safe key
+uid           [ revoked] Alexis Lowe <alexis.lowe@chimbosonic.com>
+uid           [ revoked] Alexis Lowe <alexis.lowe@dp42.dev>
+
+pub   ed25519 2026-10-29 [C] [expires: 2029-10-28]
+      F1977D760CDFAF886CA1B9EAD13924C577A8B136
+uid           [ultimate] Alexis Lowe <alexis.lowe@chimbosonic.com>
+uid           [ultimate] Alexis Lowe <alexis.lowe@dp42.dev>
+sub   ed25519 2026-10-29 [A] [expires: 2028-10-28]
+      0C424DB6FB2589329EEA6E5DAEA3C97C2D7B83A2
+sub   ed25519 2026-10-29 [S] [expires: 2028-10-28]
+      B33C98CD2D0E453933B578D4450C52E5CE7299ED
+sub   cv25519 2026-10-29 [E] [expires: 2028-10-28]
+      D4D7425B7A53DDC2D61C2316DB629EC6A7C73B0A
 
 </span>
-<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span></span> gpg -u alexis.lowe@chimbosonic.com --clear-sign <a href="signature.profile.asc">signature.profile</a>
+<span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span></span>echo "I, Alexis Lowe (chimbosonic), own and operate https://chimbosonic.com
+    and control the OpenPGP key F1977D760CDFAF886CA1B9EAD13924C577A8B136." | fmt -w 80 | gpg -u 'Alexis Lowe' --clear-sign
 <span class="out">-----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+Hash: SHA512
 
-Verify this profile at https://keyoxide.org/sig
-
-Social Accounts:
-
-proof=https://fosstodon.org/@chimbosonic
-proof=https://gist.github.com/chimbosonic/acded97e87889c2440366550253b812f
-proof=https://codeberg.org/chimbosonic/gitea_proof
-proof=https://news.ycombinator.com/user?id=chimbosonic
-proof=matrix:u/@chimbosonic_1:matrix.org?org.keyoxide.r=!dBfQZxCoGVmSTujfiv:matrix.org&org.keyoxide.e=$9mdcf9qT7lEuAd1jbNrY6ogBVWpM2e7d6Ta_GWFEOwo
-proof=https://twitter.com/chimbosonic/status/1625087893516480512
-proof=https://lobste.rs/u/chimbosonic
-
-Domains:
-
-proof=dns:chimbosonic.com?type=TXT
-proof=dns:dp42.dev?type=TXT
-proof=dns:raphael.digital?type=TXT
+I, Alexis Lowe (chimbosonic), own and operate https://chimbosonic.com and
+control the OpenPGP key F1977D760CDFAF886CA1B9EAD13924C577A8B136.
 -----BEGIN PGP SIGNATURE-----
 
-iQJPBAEBCAA5FiEErEi8HwKbYYjZfi2AfIVdtEZt8MYFAmjbBw8bFIAAAAAABAAO
-bWFudTIsMi41KzEuMTEsMiwyAAoJEHyFXbRGbfDGtcIQALX3SeNexU5tzf3SDW4p
-3fIZ/curXC3mBN6rbNKMyUAj6KgVsuJeL0F5I2hq4v08ZQ03C5Y+j6mza4WLTc8T
-Y9/sFC9cFu1IyhANbEhdJu3SIxTZszmy/BUP1n9F6DuXm3ontsCy3mqDB9GNNxLm
-PZBcBTVKkx0LemZVBvcwUhDKrGDEMSgAkvwG22Jo3vQetK/v8JA0xyJkboQ7gnAT
-ehocVJcy+oA/Ani9ssFjuu8mY/MUbAxKFsqURPN8Zq7Q6cR6z02C8ootF2w4cTZr
-b8Vqbj4a43jhQt2WRuHmaufXNFd3leiV07PkLwrMGWg6gExA0S1X/YpuR5Glzm/f
-HV8CSOy5L2miD5HR1YxY0VJCdhfVAp2qHqRp0rM1hqO2EiVD9VglK4y2WIvZHxHA
-a5gpU66StS8HT9O2Zkc4W+h5+xe+VL5LX8nO0txFOeIwhcCw8Rd8ldwAl9brTIFP
-/UrsP3k2RD984sGHPHPhX4UOGXywby5kBZqrMNJVlawefb2eJKZquNW2TzgE9tC9
-l5amV+bKkymI0qhzoZzH0snbj9gb3i8A2aX2J4d3Z6D5D9mNvG93cARUqLuVukFF
-I05fxabS+sPHuVargtP777U2tDa8w24FQnhFHfj6LUqqockkZOJ+dD5FxezCd/5D
-Pto9RNHoFXAjNRJZTQJbwpOn
-=gZTA
+iK4EARYKAFYWIQSzPJjNLQ5FOTO1eNRFDFLlznKZ7QUCawAgoRsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwyLDIcHGFsZXhpcy5sb3dlQGNoaW1ib3NvbmljLmNvbQAK
+CRBFDFLlznKZ7QhZAP9dkoH+2Rfg5OvqH/iH7dx4X8XNPM+9Zt/39+cxHm/dCwD/
+XcmVjMiW6YHYRhxrTmQoKh/fmX9plLe8FrjEphoH7gk=
+=m/Ql
 -----END PGP SIGNATURE-----
-
-
 
 </span>
 <span class="prompt">[<span class="user">chimbosonic</span>@<span class="host">website</span> <span class="dir">~</span>]<span class="p">#</span></span> cat tracking_notice
